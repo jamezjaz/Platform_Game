@@ -63,20 +63,44 @@ export default class PreloaderScene extends Phaser.Scene {
       assetText.setText('Loading Asset: ' + file.key);
     });
 
+    // // remove progress bar when complete
+    // this.load.on('complete', function () {
+    //   progressBar.destroy();
+    //   progressBox.destroy();
+    //   loadingText.destroy();
+    //   percentText.destroy();
+    //   assetText.destroy();
+    // });
+
     // remove progress bar when complete
+//   this.load.on('complete', function () {
     this.load.on('complete', function () {
-      progressBar.destroy();
-      progressBox.destroy();
-      loadingText.destroy();
-      percentText.destroy();
-      assetText.destroy();
-    });
+    progressBar.destroy();
+    progressBox.destroy();
+    loadingText.destroy();
+    percentText.destroy();
+    assetText.destroy();
+    this.ready();
+  }.bind(this));
+   
+  this.timedEvent = this.time.delayedCall(3000, this.ready, [], this);
 
     // load assets needed in our game
     this.load.image('blueButton1', '../src/assets/ui/blue_button02.png');
     this.load.image('blueButton2', '../src/assets/ui/blue_button03.png');
     this.load.image('phaserLogo', '../src/assets/logo.png');
     }
+
+  init () {
+    this.readyCount = 0;
+  }
+
+  ready () {
+    this.readyCount++;
+    if (this.readyCount === 2) {
+      this.scene.start('Title');
+    }
+  }
  
   create () {
   }
