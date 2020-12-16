@@ -8,6 +8,7 @@ export default class TitleScene extends Phaser.Scene {
   }
  
   // preload () {
+  
   // }
  
   create () {
@@ -28,5 +29,7 @@ export default class TitleScene extends Phaser.Scene {
       this.model.bgMusicPlaying = true;
       this.sys.game.globals.bgMusic = this.bgMusic;
     }
+
+    this.add.image(400, 300, 'titleImage').setDepth(-1);
   }
 };
