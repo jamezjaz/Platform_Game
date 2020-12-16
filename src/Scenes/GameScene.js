@@ -79,6 +79,8 @@ export default class GameScene extends Phaser.Scene {
     });
 
     this.physics.add.collider(stars, platforms);
+
+    this.physics.add.overlap(player, stars, collectStar, null, this);
   }
 
   update() {
@@ -107,3 +109,7 @@ export default class GameScene extends Phaser.Scene {
     }
   }
 };
+
+const collectStar = (player, star) => {
+  star.disableBody(true, true);
+}
