@@ -19,5 +19,12 @@ export default class TitleScene extends Phaser.Scene {
 
     // Credits
     this.creditsButton = new Button(this, config.width/2, config.height/2 + 50, 'blueButton1', 'blueButton2', 'Credits', 'Credits');
+
+    //backgroud music from the glodel model state
+    this.model = this.sys.game.globals.model;
+    if (this.model.musicOn === true) {
+      this.bgMusic = this.sound.add('bgMusic', { volume: 0.5, loop: true });
+      this.bgMusic.play();
+    }
   }
 };
