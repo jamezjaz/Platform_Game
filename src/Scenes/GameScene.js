@@ -74,11 +74,11 @@ export default class GameScene extends Phaser.Scene {
       setXY: { x: 12, y: 0, stepX: 70 }
     });
     
-    stars.children.iterate(child => {
-    
-        child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
-    
+    stars.children.iterate(child => {   
+      child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));    
     });
+
+    this.physics.add.collider(stars, platforms);
   }
 
   update() {
