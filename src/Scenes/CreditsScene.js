@@ -10,7 +10,7 @@ export default class CreditsScene extends Phaser.Scene {
   }
  
   create () {
-    this.creditsText = this.add.text(0, 0, 'CREDITS', { fontSize: '32px', fill: '#fff' });
+    this.creditsText = this.add.text(0, 0, 'CREDITS', { fontSize: 40, fill: '#fff' });
     this.madeByText = this.add.text(0, 0, 'CREATED BY: Odufu James Chigozie\nINSPIRED BY: Zenva and Richard Davey\nPIXELART BY: Open Game Art', 
       { fontSize: '26px', fill: '#fff', lineSpacing: 40 });
     this.zone = this.add.zone(config.width/2, config.height/2, config.width, config.height);
