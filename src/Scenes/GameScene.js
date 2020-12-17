@@ -32,15 +32,12 @@ export default class GameScene extends Phaser.Scene {
     this.add.image(400, 300, 'sky');
 
     platforms = this.physics.add.staticGroup();
-
     platforms.create(400, 568, 'ground').setScale(2).refreshBody();
-
     platforms.create(600, 400, 'ground');
     platforms.create(50, 250, 'ground');
     platforms.create(750, 220, 'ground');
 
     player = this.physics.add.sprite(100, 450, 'dude');
-
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
 
@@ -79,37 +76,61 @@ export default class GameScene extends Phaser.Scene {
     });
 
     this.physics.add.collider(stars, platforms);
-
     this.physics.add.overlap(player, stars, collectStar, null, this);
+    scoreText = this.add.text(16, 20, 'score: 0', { fontSize: '32px', fill: '#940000' });
+    gameOverText = this.add.text(400, 300, 'Game Over', { fontSize: '64px', fill: '#940000' });
+    gameOverText.setOrigin(0.5);
+    gameOverText.visible = false;
+    bombs = this.physics.add.group();
+    this.physics.add.collider(bombs, platforms);
+    this.physics.add.collider(player, bombs, hitBomb, null, this);
   }
 
   update() {
-    if (cursors.left.isDown)
-    {
-        player.setVelocityX(-160);
-
-        player.anims.play('left', true);
+    if (cursors.left.isDown) {
+      player.setVelocityX(-160);
+      player.anims.play('left', true);
     }
     else if (cursors.right.isDown)
     {
-        player.setVelocityX(160);
-
-        player.anims.play('right', true);
+      player.setVelocityX(160);
+      player.anims.play('right', true);
     }
     else
     {
-        player.setVelocityX(0);
-
-        player.anims.play('turn');
+      player.setVelocityX(0);
+      player.anims.play('turn');
     }
-
     if (cursors.up.isDown && player.body.touching.down)
     {
-        player.setVelocityY(-330);
+      player.setVelocityY(-330);
     }
   }
 };
 
 const collectStar = (player, star) => {
   star.disableBody(true, true);
-}
+  score += 10;
+  scoreText.setText('Your Score: ' + score);
+
+  if (stars.countActive(true) === 0) {
+    stars.children.iterate(function (child) {
+      child.enableBody(true, child.x, 0, true, true);
+    });
+    var x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
+    var bomb = bombs.create(x, 16, 'bomb');
+    bomb.setBounce(1);
+    bomb.setCollideWorldBounds(true);
+    bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
+    bomb.allowGravity = false;
+  }
+};
+
+function hitBomb (player, bomb) {
+  this.physics.pause();
+  player.setTint(0xff0000);
+  player.anims.play('turn');
+  gameOverText.visible = true;
+  gameOver = true;
+  this.scene.start('Title');
+};
