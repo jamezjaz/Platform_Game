@@ -2,14 +2,14 @@ import 'phaser';
 import OptionsScene from './OptionsScene';
 import scoreData from '../modules/scoreAPI';
 
-let platforms
-let player
-let cursors
-let stars
+let platforms;
+let player;
+let cursors;
+let stars;
 let score = 0;
 let scoreText;
-let gameOverText
-let bombs
+let gameOverText;
+let bombs;
 let gameOver = false;
  
 export default class GameScene extends Phaser.Scene {
@@ -134,8 +134,9 @@ function hitBomb (player, bomb) {
   this.physics.pause();
   player.setTint(0xff0000);
   player.anims.play('turn');
-  gameOverText.visible = true;
   gameOver = true;
+  gameOverText.visible = true;
   score = 0;
-  this.scene.start('Title');
+  // this.scene.start('Title');
+  this.scene.start('GameOverScene');
 };
