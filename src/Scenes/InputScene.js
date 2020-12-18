@@ -1,4 +1,5 @@
-import config from '../Config/config'
+import config from '../Config/config';
+import scoreData from '../modules/scoreAPI';
 
 class InputScene extends Phaser.Scene {
 
@@ -46,6 +47,7 @@ class InputScene extends Phaser.Scene {
 
                 //  Populate the text with whatever they typed in as the name!
 
+                scoreData.nameSetter(inputName.value)
                 self.scene.start('Game')
 
             }

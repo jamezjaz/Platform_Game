@@ -1,5 +1,6 @@
 import 'phaser';
 import OptionsScene from './OptionsScene';
+import scoreData from '../modules/scoreAPI';
 
 let platforms
 let player
@@ -127,10 +128,14 @@ const collectStar = (player, star) => {
 };
 
 function hitBomb (player, bomb) {
+  let final = score;
+  scoreData.scoreSetter(final);
+  scoreData.postScores();
   this.physics.pause();
   player.setTint(0xff0000);
   player.anims.play('turn');
   gameOverText.visible = true;
   gameOver = true;
+  score = 0;
   this.scene.start('Title');
 };

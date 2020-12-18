@@ -46,8 +46,10 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "node-fetch": "^2.6.1",
     "phaser": "^3.24.1",
     "regenerator-runtime": "^0.13.7",
     "webpack": "^4.41.2"
