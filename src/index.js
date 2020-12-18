@@ -9,7 +9,7 @@ import OptionsScene from './Scenes/OptionsScene';
 import CreditsScene from './Scenes/CreditsScene';
 import Model from '../src/Model';
 import InputScene from './Scenes/InputScene';
-import Board from './Scenes/LeaderBoardScene'
+import Board from './Scenes/LeaderBoardScene';
 
 class Game extends Phaser.Game {
   constructor () {
@@ -23,6 +23,7 @@ class Game extends Phaser.Game {
     this.scene.add('Credits', CreditsScene);
     this.scene.add('Game', GameScene);
     this.scene.add('Input', InputScene.InputScene);
+    this.scene.add('LeaderBoard', Board);
     this.scene.start('Boot');
   }
 }

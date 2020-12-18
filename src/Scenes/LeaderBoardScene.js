@@ -1,3 +1,4 @@
+import Board from '../modules/scoreBoard';
 import config from '../Config/config';
 
 export default class LeaderBoard extends Phaser.Scene {
