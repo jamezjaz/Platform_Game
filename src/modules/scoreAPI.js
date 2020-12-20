@@ -37,10 +37,12 @@ const scoreData = (function() {
   
     const nameSetter = (name) => {
       data.user = name
+      console.log(name);
     }
   
     const scoreSetter = (score) => {
       data.score = score
+      console.log(score);
     }
   
     return{

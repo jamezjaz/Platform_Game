@@ -14,7 +14,7 @@ export default class LeaderBoard extends Phaser.Scene {
 
     let self = this
 
-    this.add.text(config.width/3.3, 10, 'LeaderBoard', { color: 'white', fontSize: '32px '})
+    this.add.text(config.width/3, 10, 'LEADERBOARD', { color: 'white', fontSize: '32px '})
 
     let element = this.add.dom(300, 250).createFromCache('leaderBoard');
 

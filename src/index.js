@@ -11,6 +11,7 @@ import Model from '../src/Model';
 import InputScene from './Scenes/InputScene';
 import Board from './Scenes/LeaderBoardScene';
 import GameOverScene from './Scenes/GameOverScene';
+import './css/style.css';
 
 class Game extends Phaser.Game {
   constructor () {
