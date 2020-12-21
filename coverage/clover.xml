@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1608566344862" clover="3.2.0">
-  <project timestamp="1608566344862" name="All files">
-    <metrics statements="188" coveredstatements="17" conditionals="20" coveredconditionals="0" methods="40" coveredmethods="3" elements="248" coveredelements="20" complexity="0" loc="188" ncloc="188" packages="4" files="7" classes="7"/>
+<coverage generated="1608566533686" clover="3.2.0">
+  <project timestamp="1608566533687" name="All files">
+    <metrics statements="200" coveredstatements="17" conditionals="24" coveredconditionals="0" methods="42" coveredmethods="3" elements="266" coveredelements="20" complexity="0" loc="200" ncloc="200" packages="5" files="9" classes="9"/>
     <package name="src">
       <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="Model.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Model.js">
@@ -15,6 +15,12 @@
         <line num="21" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Config">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="config.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Config/config.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.Objects">
@@ -40,7 +46,7 @@
       </file>
     </package>
     <package name="src.Scenes">
-      <metrics statements="141" coveredstatements="3" conditionals="20" coveredconditionals="0" methods="24" coveredmethods="0"/>
+      <metrics statements="153" coveredstatements="3" conditionals="24" coveredconditionals="0" methods="26" coveredmethods="0"/>
       <file name="BootScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/BootScene.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
@@ -193,6 +199,21 @@
         <line num="108" count="0" type="stmt"/>
         <line num="109" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="110" count="0" type="stmt"/>
+      </file>
+      <file name="TitleScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/TitleScene.js">
+        <metrics statements="12" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.modules">
