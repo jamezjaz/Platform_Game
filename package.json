@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
     "start": "webpack-dev-server --config webpack/base.js --open",
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "jest": {
     "setupFiles": [
