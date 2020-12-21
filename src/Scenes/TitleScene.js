@@ -12,6 +12,11 @@ export default class TitleScene extends Phaser.Scene {
   // }
  
   create () {
+    //Game Title
+    let gameTitle;
+    gameTitle = this.add.text(400, 550, 'PLATFORM GAME', { fontSize: '64px', fill: '#1ea7e1', fontFamily: 'Georgia, serif' });
+    gameTitle.setOrigin(0.5);
+
     // Game
     this.gameButton = new Button(this, config.width/2, config.height/2 - 150, 'blueButton1', 'blueButton2', 'Play', 'Input');
 
