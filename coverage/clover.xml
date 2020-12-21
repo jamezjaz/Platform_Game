@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1608567035604" clover="3.2.0">
-  <project timestamp="1608567035605" name="All files">
-    <metrics statements="239" coveredstatements="22" conditionals="28" coveredconditionals="0" methods="52" coveredmethods="4" elements="319" coveredelements="26" complexity="0" loc="239" ncloc="239" packages="5" files="11" classes="11"/>
+<coverage generated="1608568527543" clover="3.2.0">
+  <project timestamp="1608568527543" name="All files">
+    <metrics statements="257" coveredstatements="22" conditionals="32" coveredconditionals="0" methods="56" coveredmethods="4" elements="345" coveredelements="26" complexity="0" loc="257" ncloc="257" packages="5" files="12" classes="12"/>
     <package name="src">
       <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="Model.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Model.js">
@@ -46,7 +46,7 @@
       </file>
     </package>
     <package name="src.Scenes">
-      <metrics statements="164" coveredstatements="3" conditionals="26" coveredconditionals="0" methods="30" coveredmethods="0"/>
+      <metrics statements="182" coveredstatements="3" conditionals="30" coveredconditionals="0" methods="34" coveredmethods="0"/>
       <file name="BootScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/BootScene.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
@@ -122,6 +122,27 @@
         <line num="138" count="0" type="stmt"/>
         <line num="139" count="0" type="stmt"/>
         <line num="141" count="0" type="stmt"/>
+      </file>
+      <file name="InputScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/InputScene.js">
+        <metrics statements="18" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
       </file>
       <file name="LeaderBoardScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/LeaderBoardScene.js">
         <metrics statements="11" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
@@ -234,10 +255,10 @@
       <metrics statements="50" coveredstatements="19" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="4"/>
       <file name="scoreAPI.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/modules/scoreAPI.js">
         <metrics statements="22" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="10" count="5" type="stmt"/>
         <line num="11" count="5" type="stmt"/>
         <line num="12" count="5" type="stmt"/>
@@ -249,13 +270,13 @@
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
-        <line num="38" count="3" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
-        <line num="48" count="3" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
       </file>
       <file name="scoreBoard.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/modules/scoreBoard.js">
         <metrics statements="28" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="1"/>
