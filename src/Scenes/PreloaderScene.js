@@ -94,6 +94,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.audio('bgMusic', ['../src/assets/bensound-epic.mp3']);
     this.load.image('titleImage', '../src/assets/titleBg.png');
     this.load.image('optionsImage', '../src/assets/optionsBg.png');
+    this.load.image('InstructionImage', '../src/assets/ui/arrows.png');
     }
 
   init () {

@@ -11,6 +11,7 @@ import Model from '../src/Model';
 import InputScene from './Scenes/InputScene';
 import Board from './Scenes/LeaderBoardScene';
 import GameOverScene from './Scenes/GameOverScene';
+import InstructionScene from './Scenes/InstructionScene';
 import './css/style.css';
 
 class Game extends Phaser.Game {
@@ -27,6 +28,7 @@ class Game extends Phaser.Game {
     this.scene.add('Input', InputScene.InputScene);
     this.scene.add('LeaderBoard', Board);
     this.scene.add('GameOverScene', GameOverScene);
+    this.scene.add('Instruction', InstructionScene);
     this.scene.start('Boot');
   }
 }

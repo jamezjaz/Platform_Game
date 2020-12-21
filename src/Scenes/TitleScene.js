@@ -24,6 +24,9 @@ export default class TitleScene extends Phaser.Scene {
     // LeaderBoard
     this.leadboardButton = new Button(this, config.width / 2, config.height / 2 + 150, 'blueButton1', 'blueButton2', 'Board', 'LeaderBoard');
 
+    // Instruction
+    this.instructionButton = new Button(this, config.width / 2, config.height / 2 - 250, 'blueButton1', 'blueButton2', 'Instruction', 'Instruction');
+
     //backgroud music from the glodel model state
     this.model = this.sys.game.globals.model;
     if (this.model.musicOn === true && this.model.bgMusicPlaying === false) {
