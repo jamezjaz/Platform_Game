@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1608566017946" clover="3.2.0">
-  <project timestamp="1608566017946" name="All files">
-    <metrics statements="34" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="3" elements="49" coveredelements="17" complexity="0" loc="34" ncloc="34" packages="3" files="3" classes="3"/>
+<coverage generated="1608566221015" clover="3.2.0">
+  <project timestamp="1608566221015" name="All files">
+    <metrics statements="76" coveredstatements="14" conditionals="2" coveredconditionals="0" methods="23" coveredmethods="3" elements="101" coveredelements="17" complexity="0" loc="76" ncloc="76" packages="3" files="4" classes="4"/>
     <package name="src">
       <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="Model.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Model.js">
@@ -18,12 +18,57 @@
       </file>
     </package>
     <package name="src.Scenes">
-      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="45" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="0"/>
       <file name="BootScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/BootScene.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="PreloaderScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/PreloaderScene.js">
+        <metrics statements="42" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="109" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="110" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.modules">
