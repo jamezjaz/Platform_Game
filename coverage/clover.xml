@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1608568527543" clover="3.2.0">
-  <project timestamp="1608568527543" name="All files">
-    <metrics statements="257" coveredstatements="22" conditionals="32" coveredconditionals="0" methods="56" coveredmethods="4" elements="345" coveredelements="26" complexity="0" loc="257" ncloc="257" packages="5" files="12" classes="12"/>
+<coverage generated="1608569611559" clover="3.2.0">
+  <project timestamp="1608569611559" name="All files">
+    <metrics statements="275" coveredstatements="22" conditionals="32" coveredconditionals="0" methods="63" coveredmethods="4" elements="370" coveredelements="26" complexity="0" loc="275" ncloc="275" packages="5" files="14" classes="14"/>
     <package name="src">
       <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="Model.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Model.js">
@@ -46,12 +46,36 @@
       </file>
     </package>
     <package name="src.Scenes">
-      <metrics statements="182" coveredstatements="3" conditionals="30" coveredconditionals="0" methods="34" coveredmethods="0"/>
+      <metrics statements="200" coveredstatements="3" conditionals="30" coveredconditionals="0" methods="41" coveredmethods="0"/>
       <file name="BootScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/BootScene.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="CreditsScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/CreditsScene.js">
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+      </file>
+      <file name="GameOverScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/GameOverScene.js">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
       </file>
       <file name="GameScene.js" path="/home/jamezjaz/Microverse_Projects/Platform_Game/src/Scenes/GameScene.js">
         <metrics statements="67" coveredstatements="3" conditionals="12" coveredconditionals="0" methods="8" coveredmethods="0"/>
