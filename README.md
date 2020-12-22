@@ -23,7 +23,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jamezjaz/Platform_Game">
-    <img src="assets/readme/microverse.png" alt="Logo" width="80" height="80">
+    <img src="src/assets/readme/microverse.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">JavaScript / Capstone --> [Platform Game]</h3>
@@ -43,9 +43,11 @@
 <!-- TABLE OF CONTENTS -->
 ## Table Of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-  * [Walkthrough Video and Deployment (GitHub-Pages)](#walkthrough-video)
+* [About The Project](#about-the-project)
+* [How To Play](#how-to-play)
+* [Design Process](#design-process)
+* [Built With](#built-with)
+* [Walkthrough Video](#walkthrough-video)
 * [Usage](#usage)
 * [Contributors](#contributors)
 * [Acknowledgements](#acknowledgements)
@@ -85,22 +87,34 @@ This project was built using these technologies.
 * Jest Tests
 * Babel
 * GitHub Action :muscle:
-* VScode :vscode:
+* VScode
 
 <!-- Walkthrough Link -->
-## Walkthrough Video and Deployment (GitHub-Pages)
-https://www.loom.com/share/34f0969ac0524696937bb2b2ccc21eba
+## Walkthrough Video
+
 
 
 <!-- Live Demo -->
 ## Live Demo
-* Live Demo Link --> App Deployed with GitHub-Pages: [Final Warrior](https://rammazzoti2000.github.io/js_capstone_rpg/) :point_left:
+* Deployed on [Netlify](https://jaz-platform-game.netlify.app/) :point_left:
 
 
 ## Preview
-![screenshot-1](assets/readme/menu.png)
-![screenshot-2](assets/readme/guide.png)
-![screenshot-3](assets/readme/game.png)
+- Instruction Scene
+![InstructionScene](https://user-images.githubusercontent.com/57812000/102841449-952ad880-43ca-11eb-9e6d-914eb51d58c1.png)
+
+- Game Scene
+![GameScene](https://user-images.githubusercontent.com/57812000/102841560-c60b0d80-43ca-11eb-9c09-6acc4702b2f6.png)
+
+- Game Scene 2
+![GameScene2](https://user-images.githubusercontent.com/57812000/102841638-f6eb4280-43ca-11eb-8160-b64601ccdeaa.png)
+
+- Options Scene
+![OptionsScene](https://user-images.githubusercontent.com/57812000/102841779-2e59ef00-43cb-11eb-99eb-8e96b47dd171.png)
+
+- LeaderBoard Scene
+![LeaderBoardScene](https://user-images.githubusercontent.com/57812000/102841952-8264d380-43cb-11eb-8c22-7d162d9b686d.png)
+
 
 ### Getting Started
 
