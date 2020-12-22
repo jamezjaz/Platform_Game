@@ -1,4 +1,6 @@
-import 'phaser';
+/* eslint-disable no-unused-vars */
+
+import Phaser from 'phaser';
 import regeneratorRuntime from 'regenerator-runtime';
 import config from './Config/config';
 import GameScene from './Scenes/GameScene';
@@ -7,7 +9,7 @@ import PreloaderScene from './Scenes/PreloaderScene';
 import TitleScene from './Scenes/TitleScene';
 import OptionsScene from './Scenes/OptionsScene';
 import CreditsScene from './Scenes/CreditsScene';
-import Model from '../src/Model';
+import Model from './Model';
 import InputScene from './Scenes/InputScene';
 import Board from './Scenes/LeaderBoardScene';
 import GameOverScene from './Scenes/GameOverScene';
@@ -15,7 +17,7 @@ import InstructionScene from './Scenes/InstructionScene';
 import './css/style.css';
 
 class Game extends Phaser.Game {
-  constructor () {
+  constructor() {
     super(config);
     const model = new Model();
     this.globals = { model, bgMusic: null };

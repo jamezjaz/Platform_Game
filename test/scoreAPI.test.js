@@ -1,32 +1,32 @@
 import scoreData from '../src/modules/scoreAPI';
-import "regenerator-runtime";
+import 'regenerator-runtime';
 
 test('It should retrieve and return the scores', async () => {
   await scoreData.getScores()
     .then((data) => {
-    expect(data).toEqual(
-      expect.arrayContaining([
-        expect.objectContaining({
-          user: 'Jaz',
-        }),
-      ]),
-    );
-  })
+      expect(data).toEqual(
+        expect.arrayContaining([
+          expect.objectContaining({
+            user: 'Jaz',
+          }),
+        ]),
+      );
+    })
     .catch(() => {});
-  });
+});
 
 test('It should retrieve and return the scores', async () => {
   await scoreData.getScores()
     .then((data) => {
-    expect(data).toEqual(
-      expect.arrayContaining([
-        expect.objectContaining({
-          score: '100',
-        }),
-      ]),
-    );
-  })
-  .catch(() => {});
+      expect(data).toEqual(
+        expect.arrayContaining([
+          expect.objectContaining({
+            score: '100',
+          }),
+        ]),
+      );
+    })
+    .catch(() => {});
 });
 
 test('It should post player name', async () => {
@@ -47,18 +47,18 @@ test('It should send an object to the API', async () => {
   }).catch(() => {});
 });
 
-it("It should save score and name", async () => {
-  await scoreData.postScores("Curnoll Prisca", 300)
+it('It should save score and name', async () => {
+  await scoreData.postScores('Curnoll Prisca', 300)
     .then((data) => {
-    expect(data.result).toBe("Success!");
-  })
-  .catch(() => {});
+      expect(data.result).toBe('Success!');
+    })
+    .catch(() => {});
 });
 
 test('name should not be blank', async () => {
   await scoreData.postScores(' ', 10)
     .then((response) => {
-    expect(response).toBe(null);
-  })
-  .catch((error) => error);
+      expect(response).toBe(null);
+    })
+    .catch((error) => error);
 });

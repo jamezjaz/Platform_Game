@@ -1,11 +1,13 @@
+/* eslint-disable func-names */
+
 import scoreData from './scoreAPI';
 
 const Board = (function () {
   const sortData = (data) => {
     const arr = data;
     const len = arr.length;
-    for (let i = 0; i < len; i++) {
-      for (let j = 0; j < len - 1; j++) {
+    for (let i = 0; i < len; i += 1) {
+      for (let j = 0; j < len - 1; j += 1) {
         if (arr[j].score < arr[j + 1].score) {
           const tmp = arr[j];
           arr[j] = arr[j + 1];

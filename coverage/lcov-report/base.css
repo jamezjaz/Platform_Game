@@ -1,3 +1,10 @@
+/* stylelint-disable selector-list-comma-newline-after, declaration-colon-space-after, eclaration-block-semicolon-newline-after,
+rule-empty-line-before, indentation, font-family-no-missing-generic-family-keyword, declaration-block-semicolon-newline-after,
+selector-pseudo-element-colon-notation, declaration-block-single-line-max-declarations, block-closing-brace-space-before,
+at-rule-empty-line-before, declaration-bang-space-before, function-comma-space-after, no-descending-specificity, block-no-empty,
+color-hex-case, media-feature-colon-space-after, block-opening-brace-space-after, comment-empty-line-before, declaration-block-trailing-semicolon,
+block-opening-brace-space-before, no-duplicate-selectors, number-leading-zero */
+
 body, html {
   margin:0; padding: 0;
   height: 100%;

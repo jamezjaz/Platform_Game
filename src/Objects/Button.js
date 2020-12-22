@@ -1,4 +1,6 @@
-import 'phaser';
+/* eslint-disable prefer-arrow-callback, func-names */
+
+import Phaser from 'phaser';
 
 export default class Button extends Phaser.GameObjects.Container {
   constructor(scene, x, y, key1, key2, text, targetScene) {
@@ -19,13 +21,13 @@ export default class Button extends Phaser.GameObjects.Container {
     }.bind(this));
 
     this.button.on('pointerover', function () {
-        this.button.setTexture(key2);
-      }.bind(this));
-  
-      this.button.on('pointerout', function () {
-        this.button.setTexture(key1);
-      }.bind(this));
-  
-      this.scene.add.existing(this);
+      this.button.setTexture(key2);
+    }.bind(this));
+
+    this.button.on('pointerout', function () {
+      this.button.setTexture(key1);
+    }.bind(this));
+
+    this.scene.add.existing(this);
   }
 }

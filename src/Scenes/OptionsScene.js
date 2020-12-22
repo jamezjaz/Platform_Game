@@ -1,15 +1,18 @@
-import 'phaser';
+/* eslint-disable prefer-arrow-callback, func-names */
+
+import Phaser from 'phaser';
+
 import Button from '../Objects/Button';
- 
+
 export default class OptionsScene extends Phaser.Scene {
-  constructor () {
+  constructor() {
     super('Options');
   }
- 
+
   // preload () {
   // }
- 
-  create () {
+
+  create() {
     this.model = this.sys.game.globals.model;
 
     this.text = this.add.text(300, 100, 'OPTIONS', { fontSize: 40 });
@@ -58,4 +61,4 @@ export default class OptionsScene extends Phaser.Scene {
       this.soundButton.setTexture('checkedBox');
     }
   }
-};
+}

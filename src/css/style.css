@@ -1,3 +1,5 @@
+/* stylelint-disable csstree/validator, function-linear-gradient-no-nonstandard-direction, length-zero-no-unit */
+
 body {
   padding: 0;
   box-sizing: border-box;
@@ -39,7 +41,7 @@ canvas {
   padding-top: 14px;
   margin: 0;
   text-align: center;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.2), 0 1px 0 #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 #fff;
 }
 
 input[type="text"] {
@@ -89,7 +91,7 @@ input[type="checkbox"]:checked {
   z-index: -1;
 }
 
-input[type="checkbox"]:checked + .toggle { background-position: 0 -16px }
+input[type="checkbox"]:checked + .toggle { background-position: 0 -16px; }
 
 .forgot {
   color: #7f7f7f;
@@ -100,37 +102,37 @@ input[type="checkbox"]:checked + .toggle { background-position: 0 -16px }
   position: relative;
   text-decoration: none;
   top: 5px;
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
-.forgot:hover { color: #3b3b3b }
+.forgot:hover { color: #3b3b3b; }
 
 input[name="saveNameBtn"] {
-  width:240px;
-  height:35px;
-  display:block;
-  font-family:Arial, "Helvetica", sans-serif;
-  font-size:16px;
-  font-weight:bold;
-  color:#fff;
-  text-decoration:none;
-  text-transform:uppercase;
-  text-align:center;
-  text-shadow:1px 1px 0px #37a69b;
-  padding-top:6px;
+  width: 240px;
+  height: 35px;
+  display: block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 0px #37a69b;
+  padding-top: 6px;
   margin: 29px 0 0 29px;
-  position:relative;
-  cursor:pointer;
+  position: relative;
+  cursor: pointer;
   border: none;
   background-color: #37a69b;
-  background-image: linear-gradient(top,#3db0a6,#3111);
+  background-image: linear-gradient(top, #3db0a6, #3111);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-bottom-left-radius:5px;
+  border-bottom-left-radius: 5px;
   box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
 }
-  
+
 .shadow {
   background: #000;
   border-radius: 12px 12px 4px 4px;
@@ -140,97 +142,79 @@ input[name="saveNameBtn"] {
   opacity: 0.2;
   width: 270px;
 }
-  
+
 input[name="saveNameBtn"]:active {
-  top:3px;
+  top: 3px;
   box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
 }
 
 .board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    background: white;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 40px;
-  }
-      
-  .board > span {
-    width: 40%;
-    padding: 8%;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black
-  }
-      
-  input[name="boardButton"] {
-    width:240px;
-    height:35px;
-    display:block;
-    font-family:Arial, "Helvetica", sans-serif;
-    font-size:16px;
-    font-weight:bold;
-    color:#fff;
-    text-decoration:none;
-    text-transform:uppercase;
-    text-align:center;
-    text-shadow:1px 1px 0px #37a69b;
-    padding-top:6px;
-    position: absolute;
-    cursor:pointer;
-    border: none;
-    background-color: #37a69b;
-    background-image: linear-gradient(top,#3db0a6,#3111);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius:5px;
-    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 2rem 20rem;
+}
+
+.board > span {
+  width: 40%;
+  padding: 8%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Browsers 800px and below just for view because it only works with a keyboard */
+@media screen and (max-width: 1100px) {
+  .nameInputCon {
+    width: 220px;
+    height: 160px;
+    margin: 0;
   }
 
-  /* Browsers 800px and below just for view because it only works with a keyboard */
-  @media screen and (max-width: 1100px) {
-    .nameInputCon {
-      width: 220px;
-      height: 160px;
-      margin: 0;
-    }
-  
-    input[type="text"] {
-      height: 20px;
-      margin: 20px 0 0 10px;
-      padding-left: 17px;
-      width: 140px;
-    }
-  
-    input[type="submit"] {
-      width:130px;
-      height:20px;
-      font-size:12px;
-      padding-top:3px;
-      margin: 29px 0 0 45px;
-    }
+  input[type="text"] {
+    height: 20px;
+    margin: 20px 0 0 10px;
+    padding-left: 17px;
+    width: 140px;
   }
 
-  .board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    background: white;
-    width: 100%;
-    height: 100%;
-    /* margin-bottom: 40px;
-    margin-left: 50px; */
-    margin: 0 0 0 20rem;
+  input[type="submit"] {
+    width: 130px;
+    height: 20px;
+    font-size: 12px;
+    padding-top: 3px;
+    margin: 29px 0 0 45px;
   }
+}
 
-  input[name="boardButton"] {
-    font-size:12px;
-    padding-top:4px;
-    margin: 1rem 0 0 30rem;
-  }
+input[name="boardButton"] {
+  width: 240px;
+  height: 35px;
+  display: block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 0px #37a69b;
+  padding-top: 6px;
+  margin: 1rem 0 0 30rem;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background-color: #37a69b;
+  background-image: linear-gradient(top, #3db0a6, #3111);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
 
 @media screen and (max-width: 800px) {
   .nameInputCon {
@@ -247,10 +231,10 @@ input[name="saveNameBtn"]:active {
   }
 
   input[type="submit"] {
-    width:120px;
-    height:15px;
-    font-size:10px;
-    padding-top:3px;
+    width: 120px;
+    height: 15px;
+    font-size: 10px;
+    padding-top: 3px;
     margin: 29px 0 0 45px;
   }
 
@@ -262,14 +246,10 @@ input[name="saveNameBtn"]:active {
     background: white;
     width: 100%;
     height: 100%;
-    /* margin-bottom: 40px;
-    margin-left: 50px; */
     margin: 0 0 5rem 5rem;
   }
 
   input[name="boardButton"] {
-    /* font-size:12px;
-    padding-top:4px; */
     margin: 1rem 0 5rem 10rem;
   }
 }
