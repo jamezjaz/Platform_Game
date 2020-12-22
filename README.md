@@ -48,7 +48,6 @@
 * [Design Process](#design-process)
 * [Built With](#built-with)
 * [Walkthrough Video](#walkthrough-video)
-* [Usage](#usage)
 * [Contributors](#contributors)
 * [Acknowledgements](#acknowledgements)
 * [License](#license)
@@ -58,7 +57,7 @@
 
 This is the Capstone project that seals the completion of the JavaScript module in Microverse Curriculum.
 It is a platform game. The inspiration was from Zenva and Richard Davey Phaser 3 tutorials.
-The principal aim of this game is to collect/swallow the stars. The point increment by 10 each time a star is collected. A bomb and a set of new stars show up as soon as the current set of stars are collected completely.
+The principal aim of this game is to collect/swallow the stars. The points increment by 10 each time a star is collected. A bomb and a set of new stars show up as soon as the current set of stars are exhausted.
 The player is destroyed the moment s/he collides with the bomb!
 
 ### How To Play
@@ -66,7 +65,7 @@ The player is destroyed the moment s/he collides with the bomb!
     ⬅️  ➡️
      ⬆️
 
-Basically, the game can played with the Left, the Right and the Up arrow keys only.
+Basically, the game can be played with the Left, the Right and the Up arrow keys only.
 To collect the stars and gain points, move the character left with ⬅️ key and right with ➡️ key.
 To jump, use ⬆️ key.
 The player should endavour to collect as many stars as possible in order to gain more points.
@@ -91,7 +90,7 @@ This project was built using these technologies.
 
 <!-- Walkthrough Link -->
 ## Walkthrough Video
-
+[Walkthrough Video](https://www.loom.com/share/c817e1d86f3f49c8bdeca0c9d734e076)
 
 
 <!-- Live Demo -->
@@ -110,7 +109,7 @@ This project was built using these technologies.
 ![GameScene2](https://user-images.githubusercontent.com/57812000/102841638-f6eb4280-43ca-11eb-8160-b64601ccdeaa.png)
 
 - Options Scene
-![OptionsScene](https://user-images.githubusercontent.com/57812000/102841779-2e59ef00-43cb-11eb-99eb-8e96b47dd171.png)
+![OptionsScene](https://user-images.githubusercontent.com/57812000/102841779-2e59ef00-43cb-11eb-99eb-8e96b47dd171.png)  
 
 - LeaderBoard Scene
 ![LeaderBoardScene](https://user-images.githubusercontent.com/57812000/102841952-8264d380-43cb-11eb-8c22-7d162d9b686d.png)
