@@ -1,0 +1,255 @@
+/* stylelint-disable csstree/validator, function-linear-gradient-no-nonstandard-direction, length-zero-no-unit */
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+canvas {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.nameInputCon {
+  background: #eceeee;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  width: 298px;
+  height: 257px;
+  margin: auto auto auto 5rem;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  right: 40%;
+  bottom: 50%;
+}
+
+.nameInputCon h1 {
+  background-image: linear-gradient(top, #f1f3f3, #d4dae0);
+  border-bottom: 1px solid #a6abaf;
+  border-radius: 6px 6px 0 0;
+  box-sizing: border-box;
+  color: #727678;
+  display: block;
+  height: 43px;
+  font: 600 14px/1 'Open Sans', sans-serif;
+  padding-top: 14px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 #fff;
+}
+
+input[type="text"] {
+  background: linear-gradient(top, #d6d7d7, #dee0e0);
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+
+.show-password {
+  display: block;
+  height: 16px;
+  margin: 26px 0 0 28px;
+  width: 87px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 16px;
+  opacity: 0;
+  position: relative;
+  width: 64px;
+}
+
+input[type="checkbox"]:checked {
+  left: 29px;
+  width: 58px;
+}
+
+.toggle {
+  display: block;
+  height: 16px;
+  margin-top: -20px;
+  width: 87px;
+  z-index: -1;
+}
+
+input[type="checkbox"]:checked + .toggle { background-position: 0 -16px; }
+
+.forgot {
+  color: #7f7f7f;
+  display: inline-block;
+  float: right;
+  font: 12px/1 sans-serif;
+  left: -19px;
+  position: relative;
+  text-decoration: none;
+  top: 5px;
+  transition: color 0.4s;
+}
+
+.forgot:hover { color: #3b3b3b; }
+
+input[name="saveNameBtn"] {
+  width: 240px;
+  height: 35px;
+  display: block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 0px #37a69b;
+  padding-top: 6px;
+  margin: 29px 0 0 29px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #37a69b;
+  background-image: linear-gradient(top, #3db0a6, #3111);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
+
+.shadow {
+  background: #000;
+  border-radius: 12px 12px 4px 4px;
+  box-shadow: 0 0 20px 10px #000;
+  height: 12px;
+  margin: 30px auto;
+  opacity: 0.2;
+  width: 270px;
+}
+
+input[name="saveNameBtn"]:active {
+  top: 3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 2rem 20rem;
+}
+
+.board > span {
+  width: 40%;
+  padding: 8%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Browsers 800px and below just for view because it only works with a keyboard */
+@media screen and (max-width: 1100px) {
+  .nameInputCon {
+    width: 220px;
+    height: 160px;
+    margin: 0;
+  }
+
+  input[type="text"] {
+    height: 20px;
+    margin: 20px 0 0 10px;
+    padding-left: 17px;
+    width: 140px;
+  }
+
+  input[type="submit"] {
+    width: 130px;
+    height: 20px;
+    font-size: 12px;
+    padding-top: 3px;
+    margin: 29px 0 0 45px;
+  }
+}
+
+input[name="boardButton"] {
+  width: 240px;
+  height: 35px;
+  display: block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 0px #37a69b;
+  padding-top: 6px;
+  margin: 1rem 0 0 30rem;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background-color: #37a69b;
+  background-image: linear-gradient(top, #3db0a6, #3111);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
+
+@media screen and (max-width: 800px) {
+  .nameInputCon {
+    width: 200px;
+    height: 150px;
+    margin: auto 1rem 1rem auto !important;
+  }
+
+  input[type="text"] {
+    height: 15px;
+    margin: 15px 0 0 10px;
+    padding-left: 15px;
+    width: 120px;
+  }
+
+  input[type="submit"] {
+    width: 120px;
+    height: 15px;
+    font-size: 10px;
+    padding-top: 3px;
+    margin: 29px 0 0 45px;
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    background: white;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 5rem 5rem;
+  }
+
+  input[name="boardButton"] {
+    margin: 1rem 0 5rem 10rem;
+  }
+}
