@@ -1,3 +1,8 @@
+/* stylelint-disable selector-list-comma-newline-after, declaration-colon-space-after, declaration-block-semicolon-newline-after, rule-empty-line-before,
+indentation, font-family-no-missing-generic-family-keyword, selector-pseudo-element-colon-notation, declaration-block-single-line-max-declarations, block-closing-brace-space-before,
+color-hex-case, at-rule-empty-line-before, media-feature-colon-space-after, declaration-bang-space-before, function-comma-space-after, no-descending-specificity, block-no-empty,
+block-opening-brace-space-after, comment-empty-line-before, declaration-block-trailing-semicolon, no-duplicate-selectors, block-opening-brace-space-before, number-leading-zero */
+
 body, html {
   margin:0; padding: 0;
   height: 100%;
