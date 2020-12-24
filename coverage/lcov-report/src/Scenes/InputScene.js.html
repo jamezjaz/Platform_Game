@@ -130,7 +130,12 @@
 <a name='L71'></a><a href='#L71'>71</a>
 <a name='L72'></a><a href='#L72'>72</a>
 <a name='L73'></a><a href='#L73'>73</a>
-<a name='L74'></a><a href='#L74'>74</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -144,6 +149,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -151,26 +166,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -179,15 +175,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -203,87 +198,101 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import config from '../Config/config';
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable func-names, object-shorthand, brace-style */
+&nbsp;
+import Phaser from 'phaser';
+&nbsp;
+import config from '../Config/config';
 import scoreData from '../modules/scoreAPI';
 &nbsp;
 class InputScene extends Phaser.Scene {
+<span class="fstat-no" title="function not covered" >  pr</span>eload() {
+<span class="cstat-no" title="statement not covered" >    this.load.html('nameform', '../src/assets/form.html');</span>
+  }
 &nbsp;
+<span class="fstat-no" title="function not covered" >  cr</span>eate() {
+  // this.scene.remove('Title')
 &nbsp;
-<span class="fstat-no" title="function not covered" >    pr</span>eload(){
-<span class="cstat-no" title="statement not covered" >        this.load.html('nameform', '../src/assets/form.html');</span>
-    }
-&nbsp;
-<span class="fstat-no" title="function not covered" >    cr</span>eate (){
-    // this.scene.remove('Title')
-&nbsp;
-    const self = <span class="cstat-no" title="statement not covered" >this</span>
-&nbsp;
-    const text = <span class="cstat-no" title="statement not covered" >this.add.text(config.width/3.3, 10, 'Please, enter your name', { color: 'white', fontFamily: 'Arial', fontSize: '32px '});</span>
-&nbsp;
+    const self = <span class="cstat-no" title="statement not covered" >this;</span>
+    const text = <span class="cstat-no" title="statement not covered" >this.add.text(config.width / 3.3, 10, 'Please, enter your name', { color: 'white', fontFamily: 'Arial', fontSize: '32px ' });</span>
     const element = <span class="cstat-no" title="statement not covered" >this.add.dom(400, 600).createFromCache('nameform');</span>
 &nbsp;
-&nbsp;
-&nbsp;
 <span class="cstat-no" title="statement not covered" >    element.setPerspective(800);</span>
-&nbsp;
 <span class="cstat-no" title="statement not covered" >    element.addListener('click');</span>
-&nbsp;
 <span class="cstat-no" title="statement not covered" >    element.on('click', <span class="fstat-no" title="function not covered" >fu</span>nction (event) {</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        if (event.target.name === 'saveNameBtn')</span>
-        {
-            const inputName = <span class="cstat-no" title="statement not covered" >this.getChildByName('name');</span>
-&nbsp;
-            //  Have they entered anything?
-<span class="cstat-no" title="statement not covered" >            if (inputName.value !== '')</span>
-            {
-                //  Turn off the click events
-<span class="cstat-no" title="statement not covered" >                this.removeListener('click');</span>
-&nbsp;
-                //  Tween the login form out
-<span class="cstat-no" title="statement not covered" >                this.scene.tweens.add({ targets: element.rotate3d, x: 1, w: 90, duration: 3000, ease: 'Power3' });</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >                this.scene.tweens.add({ targets: element, scaleX: 2, scaleY: 2, y: 700, duration: 3000, ease: 'Power3',</span>
-                    onComplete: <span class="fstat-no" title="function not covered" >fu</span>nction ()
-                    {
-<span class="cstat-no" title="statement not covered" >                        element.setVisible(false);</span>
-                    }
-                });
-&nbsp;
-                //  Populate the text with whatever they typed in as the name!
-&nbsp;
-<span class="cstat-no" title="statement not covered" >                scoreData.nameSetter(inputName.value)</span>
-<span class="cstat-no" title="statement not covered" >                self.scene.start('Game')</span>
-&nbsp;
-            }
-            else
-            {
-                //  Flash the prompt
-<span class="cstat-no" title="statement not covered" >                this.scene.tweens.add({ targets: text, alpha: 0.1, duration: 200, ease: 'Power3', yoyo: true });</span>
-            }
+<span class="cstat-no" title="statement not covered" >      if (event.target.name === 'saveNameBtn') {</span>
+        const inputName = <span class="cstat-no" title="statement not covered" >this.getChildByName('name');</span>
+        // Have they entered anything?
+<span class="cstat-no" title="statement not covered" >        if (inputName.value !== '') {</span>
+          // Turn off the click events
+<span class="cstat-no" title="statement not covered" >          this.removeListener('click');</span>
+          // Tween the login form out
+<span class="cstat-no" title="statement not covered" >          this.scene.tweens.add({</span>
+            targets: element.rotate3d,
+            x: 1,
+            w: 90,
+            duration: 3000,
+            ease: 'Power3',
+          });
+<span class="cstat-no" title="statement not covered" >          this.scene.tweens.add({</span>
+            targets: element,
+            scaleX: 2,
+            scaleY: 2,
+            y: 700,
+            duration: 3000,
+            ease: 'Power3',
+            onComplete: <span class="fstat-no" title="function not covered" >fu</span>nction () {
+<span class="cstat-no" title="statement not covered" >              element.setVisible(false);</span>
+            },
+          });
+          // Populate the text with whatever they typed in as the name!
+<span class="cstat-no" title="statement not covered" >          scoreData.nameSetter(inputName.value);</span>
+<span class="cstat-no" title="statement not covered" >          self.scene.start('Game');</span>
         }
-&nbsp;
+        else
+        {
+        // Flash the prompt
+<span class="cstat-no" title="statement not covered" >          this.scene.tweens.add({</span>
+            targets: text,
+            alpha: 0.1,
+            duration: 200,
+            ease: 'Power3',
+            yoyo: true,
+          });
+        }
+      }
     });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      this.tweens.add({</span>
-          targets: element,
-          y: 300,
-          duration: 3000,
-          ease: 'Power3'
-      });
+<span class="cstat-no" title="statement not covered" >    this.tweens.add({</span>
+      targets: element,
+      y: 300,
+      duration: 3000,
+      ease: 'Power3',
+    });
   }
 }
 &nbsp;
 export default {
-  InputScene
-}</pre></td></tr></table></pre>
+  InputScene,
+};</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Dec 21 2020 11:05:21 GMT-0600 (Central Standard Time)
+                at Thu Dec 24 2020 05:28:58 GMT-0600 (Central Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

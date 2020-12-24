@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">63.64% </span>
+                <span class="strong">55% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/22</span>
+                <span class='fraction'>11/20</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/5</span>
+                <span class='fraction'>2/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">63.64% </span>
+                <span class="strong">55% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>14/22</span>
+                <span class='fraction'>11/20</span>
             </div>
         
             
@@ -108,24 +108,18 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">4x</span>
+<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -136,27 +130,25 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -167,72 +159,65 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const scoreData = (function() {
-    'use strict';
-  
-    const key = '8lwQu3iBp3BgztURJXox';
-    const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/'
-    const data = {}
-  
-  
-    async function postScores(){
-      let fullData = data
-      try{
-        const response = await fetch(url, {
-          method: 'POST',
-          mode: 'cors',
-          headers: {
-            'content-type':'application/json; charset=UTF-8'
-          },
-          body: JSON.stringify(fullData)
-        })
-        // console.log("response Ok");
-        const data = <span class="cstat-no" title="statement not covered" >await response.json()</span>
-<span class="cstat-no" title="statement not covered" >        return data</span>
-      } catch (error) {
-        throw new Error("Could not reach the API: " + error)
-      }
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable func-names, no-unused-vars, no-template-curly-in-string,
+prefer-template, consistent-return, no-console */
+&nbsp;
+const scoreData = (function () {
+  const key = '8lwQu3iBp3BgztURJXox';
+  const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/';
+  const data = {};
+&nbsp;
+  async function postScores() {
+    const fullData = data;
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'content-type': 'application/json; charset=UTF-8',
+        },
+        body: JSON.stringify(fullData),
+      });
+      const data = <span class="cstat-no" title="statement not covered" >await response.json();</span>
+<span class="cstat-no" title="statement not covered" >      return data;</span>
+    } catch (error) {
+      throw new Error('Could not reach the API: ' + error);
     }
-  
-    async function getScores(){
-      try{
-        const response = await fetch(url)
-        const data = <span class="cstat-no" title="statement not covered" >await response.json();</span>
-<span class="cstat-no" title="statement not covered" >        return data</span>
-        } catch (error) {
-        console.log(error);
-      }
+  }
+&nbsp;
+  async function <span class="fstat-no" title="function not covered" >getScores(</span>) {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+      const response = <span class="cstat-no" title="statement not covered" >await fetch(url);</span>
+      const data = <span class="cstat-no" title="statement not covered" >await response.json();</span>
+<span class="cstat-no" title="statement not covered" >      return data;</span>
+    } catch (error) {
+<span class="cstat-no" title="statement not covered" >      console.log(error);</span>
     }
-  
-    const nameSetter = <span class="fstat-no" title="function not covered" >(n</span>ame) =&gt; {
-<span class="cstat-no" title="statement not covered" >      data.user = name</span>
-<span class="cstat-no" title="statement not covered" >      console.log(name);</span>
-    }
-  
-    const scoreSetter = <span class="fstat-no" title="function not covered" >(s</span>core) =&gt; {
-<span class="cstat-no" title="statement not covered" >      data.score = score</span>
-<span class="cstat-no" title="statement not covered" >      console.log(score);</span>
-    }
-  
-    return{
-      postScores,
-      getScores,
-      nameSetter,
-      scoreSetter,
-    }
-  
-  }());
-  
-  export default scoreData</pre></td></tr></table></pre>
+  }
+&nbsp;
+  const nameSetter = <span class="fstat-no" title="function not covered" >(n</span>ame) =&gt; {
+<span class="cstat-no" title="statement not covered" >    data.user = name;</span>
+  };
+&nbsp;
+  const scoreSetter = <span class="fstat-no" title="function not covered" >(s</span>core) =&gt; {
+<span class="cstat-no" title="statement not covered" >    data.score = score;</span>
+  };
+&nbsp;
+  return {
+    postScores,
+    getScores,
+    nameSetter,
+    scoreSetter,
+  };
+}());
+export default scoreData;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Dec 21 2020 11:05:21 GMT-0600 (Central Standard Time)
+                at Thu Dec 24 2020 05:28:58 GMT-0600 (Central Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

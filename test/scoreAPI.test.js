@@ -1,64 +1,62 @@
 import scoreData from '../src/modules/scoreAPI';
 import 'regenerator-runtime';
 
-test('It should retrieve and return the scores', async () => {
-  await scoreData.getScores()
-    .then((data) => {
-      expect(data).toEqual(
-        expect.arrayContaining([
-          expect.objectContaining({
-            user: 'Jaz',
-          }),
-        ]),
-      );
-    })
-    .catch(() => {});
-});
+const axios = require('axios');
 
-test('It should retrieve and return the scores', async () => {
-  await scoreData.getScores()
-    .then((data) => {
-      expect(data).toEqual(
-        expect.arrayContaining([
-          expect.objectContaining({
-            score: '100',
-          }),
-        ]),
-      );
-    })
-    .catch(() => {});
-});
+jest.mock('axios');
 
-test('It should post player name', async () => {
-  await scoreData.postScores('Gozie').then((response) => {
-    expect(response).toBe('Leaderboard name created correctly.');
+it('It should return the player\'s name', async () => {
+  axios.get.mockResolvedValue({
+    data: [
+      {
+        name: 'Jaz',
+        score: 200,
+      },
+    ],
+  });
+  await scoreData.postScores().then((data) => {
+    expect(data.name).toEqual('Jaz');
   }).catch((error) => error);
 });
 
-test('It should post player score', async () => {
-  await scoreData.postScores(2500).then((response) => {
-    expect(response).toBe('Leaderboard score created correctly.');
+it('It should return the player\'s score', async () => {
+  axios.get.mockResolvedValue({
+    data: [
+      {
+        name: 'Jaz',
+        score: 200,
+      },
+    ],
+  });
+  await scoreData.postScores().then((data) => {
+    expect(data.score).toEqual(200);
   }).catch((error) => error);
 });
 
-test('It should send an object to the API', async () => {
+it('It should fail if player\'s score is incorrect', async () => {
+  axios.get.mockResolvedValue({
+    data: [
+      {
+        name: 'Jaz',
+        score: 200,
+      },
+    ],
+  });
+  await scoreData.postScores().then((data) => {
+    expect(data.score).not.toBe(210);
+  }).catch((error) => error);
+});
+
+it('It should fail if player\'s score is incorrect', async () => {
+  axios.get.mockResolvedValue({
+    data: [
+      {
+        name: 'Jaz',
+        score: 200,
+      },
+    ],
+  });
   await scoreData.postScores().then(data => {
     expect(typeof data).toBe('object');
-  }).catch(() => {});
-});
-
-it('It should save score and name', async () => {
-  await scoreData.postScores('Curnoll Prisca', 300)
-    .then((data) => {
-      expect(data.result).toBe('Success!');
-    })
-    .catch(() => {});
-});
-
-test('name should not be blank', async () => {
-  await scoreData.postScores(' ', 10)
-    .then((response) => {
-      expect(response).toBe(null);
-    })
-    .catch((error) => error);
+  }).catch((error) => error);
 });

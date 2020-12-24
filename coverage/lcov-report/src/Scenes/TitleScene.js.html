@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>0/15</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>0/15</span>
             </div>
         
             
@@ -94,7 +94,21 @@
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -109,6 +123,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -122,6 +138,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -131,33 +153,44 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'phaser';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable prefer-const */
+&nbsp;
+import Phaser from 'phaser';
+&nbsp;
 import config from '../Config/config';
 import Button from '../Objects/Button';
- 
+&nbsp;
 export default class TitleScene extends Phaser.Scene {
-<span class="fstat-no" title="function not covered" >  co</span>nstructor () {
+<span class="fstat-no" title="function not covered" >  co</span>nstructor() {
 <span class="cstat-no" title="statement not covered" >    super('Title');</span>
   }
- 
+&nbsp;
   // preload () {
-  
+&nbsp;
   // }
- 
-<span class="fstat-no" title="function not covered" >  cr</span>eate () {
+&nbsp;
+<span class="fstat-no" title="function not covered" >  cr</span>eate() {
+    // Game Title
+    let gameTitle;
+<span class="cstat-no" title="statement not covered" >    gameTitle = this.add.text(400, 550, 'PLATFORM GAME', { fontSize: '64px', fill: '#1ea7e1', fontFamily: 'Georgia, serif' });</span>
+<span class="cstat-no" title="statement not covered" >    gameTitle.setOrigin(0.5);</span>
+&nbsp;
     // Game
-<span class="cstat-no" title="statement not covered" >    this.gameButton = new Button(this, config.width/2, config.height/2 - 150, 'blueButton1', 'blueButton2', 'Play', 'Input');</span>
+<span class="cstat-no" title="statement not covered" >    this.gameButton = new Button(this, config.width / 2, config.height / 2 - 150, 'blueButton1', 'blueButton2', 'Play', 'Input');</span>
 &nbsp;
     // Options
-<span class="cstat-no" title="statement not covered" >    this.optionsButton = new Button(this, config.width/2, config.height/2 - 50, 'blueButton1', 'blueButton2', 'Options', 'Options');</span>
+<span class="cstat-no" title="statement not covered" >    this.optionsButton = new Button(this, config.width / 2, config.height / 2 - 50, 'blueButton1', 'blueButton2', 'Options', 'Options');</span>
 &nbsp;
     // Credits
-<span class="cstat-no" title="statement not covered" >    this.creditsButton = new Button(this, config.width/2, config.height/2 + 50, 'blueButton1', 'blueButton2', 'Credits', 'Credits');</span>
+<span class="cstat-no" title="statement not covered" >    this.creditsButton = new Button(this, config.width / 2, config.height / 2 + 50, 'blueButton1', 'blueButton2', 'Credits', 'Credits');</span>
 &nbsp;
     // LeaderBoard
 <span class="cstat-no" title="statement not covered" >    this.leadboardButton = new Button(this, config.width / 2, config.height / 2 + 150, 'blueButton1', 'blueButton2', 'Board', 'LeaderBoard');</span>
 &nbsp;
-    //backgroud music from the glodel model state
+    // Instruction
+<span class="cstat-no" title="statement not covered" >    this.instructionButton = new Button(this, config.width / 2, config.height / 2 - 250, 'blueButton1', 'blueButton2', 'Instruction', 'Instruction');</span>
+&nbsp;
+    // backgroud music from the glodel model state
 <span class="cstat-no" title="statement not covered" >    this.model = this.sys.game.globals.model;</span>
 <span class="cstat-no" title="statement not covered" >    if (this.model.musicOn === true &amp;&amp; this.model.bgMusicPlaying === false) {</span>
 <span class="cstat-no" title="statement not covered" >      this.bgMusic = this.sound.add('bgMusic', { volume: 0.5, loop: true });</span>
@@ -168,14 +201,14 @@ export default class TitleScene extends Phaser.Scene {
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.add.image(400, 300, 'titleImage').setDepth(-1);</span>
   }
-};</pre></td></tr></table></pre>
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Dec 21 2020 11:05:21 GMT-0600 (Central Standard Time)
+                at Thu Dec 24 2020 05:28:58 GMT-0600 (Central Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

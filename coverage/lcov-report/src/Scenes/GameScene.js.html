@@ -197,8 +197,10 @@
 <a name='L138'></a><a href='#L138'>138</a>
 <a name='L139'></a><a href='#L139'>139</a>
 <a name='L140'></a><a href='#L140'>140</a>
-<a name='L141'></a><a href='#L141'>141</a>
-<a name='L142'></a><a href='#L142'>142</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L141'></a><a href='#L141'>141</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -229,7 +231,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -293,17 +294,14 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -339,8 +337,11 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'phaser';
-import OptionsScene from './OptionsScene';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable no-unused-vars, func-names, no-use-before-define, class-methods-use-this,
+brace-style, prefer-template, prefer-arrow-callback, prefer-const */
+&nbsp;
+import Phaser from 'phaser';
+&nbsp;
 import scoreData from '../modules/scoreAPI';
 &nbsp;
 let platforms;
@@ -352,25 +353,24 @@ let scoreText;
 let gameOverText;
 let bombs;
 let gameOver = false;
- 
+&nbsp;
 export default class GameScene extends Phaser.Scene {
-<span class="fstat-no" title="function not covered" >  co</span>nstructor () {
+<span class="fstat-no" title="function not covered" >  co</span>nstructor() {
 <span class="cstat-no" title="statement not covered" >    super('Game');</span>
   }
- 
-<span class="fstat-no" title="function not covered" >  pr</span>eload () {
+&nbsp;
+<span class="fstat-no" title="function not covered" >  pr</span>eload() {
     // load images
 <span class="cstat-no" title="statement not covered" >    this.load.image('sky', '../src/assets/game/sky.png');</span>
 <span class="cstat-no" title="statement not covered" >    this.load.image('ground', '../src/assets/game/platform.png');</span>
 <span class="cstat-no" title="statement not covered" >    this.load.image('star', '../src/assets/game/star.png');</span>
 <span class="cstat-no" title="statement not covered" >    this.load.image('bomb', '../src/assets/game/bomb.png');</span>
-<span class="cstat-no" title="statement not covered" >    this.load.spritesheet('dude', </span>
-    '../src/assets/game/dude.png',
-    { frameWidth: 32, frameHeight: 48 }
-);
+<span class="cstat-no" title="statement not covered" >    this.load.spritesheet('dude',</span>
+      '../src/assets/game/dude.png',
+      { frameWidth: 32, frameHeight: 48 });
   }
- 
-<span class="fstat-no" title="function not covered" >  cr</span>eate () {
+&nbsp;
+<span class="fstat-no" title="function not covered" >  cr</span>eate() {
 <span class="cstat-no" title="statement not covered" >    this.add.image(400, 300, 'sky');</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    platforms = this.physics.add.staticGroup();</span>
@@ -384,23 +384,23 @@ export default class GameScene extends Phaser.Scene {
 <span class="cstat-no" title="statement not covered" >    player.setCollideWorldBounds(true);</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.anims.create({</span>
-        key: 'left',
-        frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),
-        frameRate: 10,
-        repeat: -1
+      key: 'left',
+      frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),
+      frameRate: 10,
+      repeat: -1,
     });
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.anims.create({</span>
-        key: 'turn',
-        frames: [ { key: 'dude', frame: 4 } ],
-        frameRate: 20
+      key: 'turn',
+      frames: [{ key: 'dude', frame: 4 }],
+      frameRate: 20,
     });
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.anims.create({</span>
-        key: 'right',
-        frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
-        frameRate: 10,
-        repeat: -1
+      key: 'right',
+      frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
+      frameRate: 10,
+      repeat: -1,
     });
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.physics.add.collider(player, platforms);</span>
@@ -410,11 +410,11 @@ export default class GameScene extends Phaser.Scene {
 <span class="cstat-no" title="statement not covered" >    stars = this.physics.add.group({</span>
       key: 'star',
       repeat: 11,
-      setXY: { x: 12, y: 0, stepX: 70 }
+      setXY: { x: 12, y: 0, stepX: 70 },
     });
-    
-<span class="cstat-no" title="statement not covered" >    stars.children.iterate(<span class="fstat-no" title="function not covered" >ch</span>ild =&gt; {   </span>
-<span class="cstat-no" title="statement not covered" >      child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));    </span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    stars.children.iterate(<span class="fstat-no" title="function not covered" >ch</span>ild =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));</span>
     });
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.physics.add.collider(stars, platforms);</span>
@@ -433,22 +433,19 @@ export default class GameScene extends Phaser.Scene {
 <span class="cstat-no" title="statement not covered" >      player.setVelocityX(-160);</span>
 <span class="cstat-no" title="statement not covered" >      player.anims.play('left', true);</span>
     }
-    else <span class="cstat-no" title="statement not covered" >if (cursors.right.isDown)</span>
-    {
+    else <span class="cstat-no" title="statement not covered" >if (cursors.right.isDown) {</span>
 <span class="cstat-no" title="statement not covered" >      player.setVelocityX(160);</span>
 <span class="cstat-no" title="statement not covered" >      player.anims.play('right', true);</span>
     }
-    else
-    {
+    else {
 <span class="cstat-no" title="statement not covered" >      player.setVelocityX(0);</span>
 <span class="cstat-no" title="statement not covered" >      player.anims.play('turn');</span>
     }
-<span class="cstat-no" title="statement not covered" >    if (cursors.up.isDown &amp;&amp; player.body.touching.down)</span>
-    {
+<span class="cstat-no" title="statement not covered" >    if (cursors.up.isDown &amp;&amp; player.body.touching.down) {</span>
 <span class="cstat-no" title="statement not covered" >      player.setVelocityY(-330);</span>
     }
   }
-};
+}
 &nbsp;
 const collectStar = <span class="fstat-no" title="function not covered" >(p</span>layer, star) =&gt; {
 <span class="cstat-no" title="statement not covered" >  star.disableBody(true, true);</span>
@@ -459,8 +456,8 @@ const collectStar = <span class="fstat-no" title="function not covered" >(p</spa
 <span class="cstat-no" title="statement not covered" >    stars.children.iterate(<span class="fstat-no" title="function not covered" >fu</span>nction (child) {</span>
 <span class="cstat-no" title="statement not covered" >      child.enableBody(true, child.x, 0, true, true);</span>
     });
-    var x = <span class="cstat-no" title="statement not covered" >(player.x &lt; 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);</span>
-    var bomb = <span class="cstat-no" title="statement not covered" >bombs.create(x, 16, 'bomb');</span>
+    let x = <span class="cstat-no" title="statement not covered" >(player.x &lt; 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);</span>
+    let bomb = <span class="cstat-no" title="statement not covered" >bombs.create(x, 16, 'bomb');</span>
 <span class="cstat-no" title="statement not covered" >    bomb.setBounce(1);</span>
 <span class="cstat-no" title="statement not covered" >    bomb.setCollideWorldBounds(true);</span>
 <span class="cstat-no" title="statement not covered" >    bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);</span>
@@ -468,7 +465,7 @@ const collectStar = <span class="fstat-no" title="function not covered" >(p</spa
   }
 };
 &nbsp;
-function <span class="fstat-no" title="function not covered" >hitBomb </span>(player, bomb) {
+function <span class="fstat-no" title="function not covered" >hitBomb(</span>player, bomb) {
   let final = <span class="cstat-no" title="statement not covered" >score;</span>
 <span class="cstat-no" title="statement not covered" >  scoreData.scoreSetter(final);</span>
 <span class="cstat-no" title="statement not covered" >  scoreData.postScores();</span>
@@ -480,14 +477,14 @@ function <span class="fstat-no" title="function not covered" >hitBomb </span>(pl
 <span class="cstat-no" title="statement not covered" >  score = 0;</span>
   // this.scene.start('Title');
 <span class="cstat-no" title="statement not covered" >  this.scene.start('GameOverScene');</span>
-};</pre></td></tr></table></pre>
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Dec 21 2020 11:05:21 GMT-0600 (Central Standard Time)
+                at Thu Dec 24 2020 05:28:58 GMT-0600 (Central Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

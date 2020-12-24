@@ -90,8 +90,19 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -101,9 +112,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -113,48 +121,46 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Board from '../modules/scoreBoard';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable prefer-const, prefer-arrow-callback, func-names */
+&nbsp;
+import Phaser from 'phaser';
+&nbsp;
+import Board from '../modules/scoreBoard';
+&nbsp;
 import config from '../Config/config';
 &nbsp;
 export default class LeaderBoard extends Phaser.Scene {
-<span class="fstat-no" title="function not covered" >  co</span>nstructor(){
-<span class="cstat-no" title="statement not covered" >    super('LeaderBoard')</span>
+<span class="fstat-no" title="function not covered" >  co</span>nstructor() {
+<span class="cstat-no" title="statement not covered" >    super('LeaderBoard');</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  pr</span>eload(){
+<span class="fstat-no" title="function not covered" >  pr</span>eload() {
 <span class="cstat-no" title="statement not covered" >    this.load.html('leaderBoard', '../src/assets/board.html');</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  cr</span>eate(){
+<span class="fstat-no" title="function not covered" >  cr</span>eate() {
+    let self = <span class="cstat-no" title="statement not covered" >this;</span>
 &nbsp;
-    let self = <span class="cstat-no" title="statement not covered" >this</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    this.add.text(config.width/3, 10, 'LEADERBOARD', { color: 'white', fontSize: '32px '})</span>
+<span class="cstat-no" title="statement not covered" >    this.add.text(config.width / 3, 10, 'LEADERBOARD', { color: 'white', fontSize: '32px' });</span>
 &nbsp;
     let element = <span class="cstat-no" title="statement not covered" >this.add.dom(300, 250).createFromCache('leaderBoard');</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    element.setPerspective(800)</span>
+<span class="cstat-no" title="statement not covered" >    element.setPerspective(800);</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    element.addListener('click');</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    element.on('click', <span class="fstat-no" title="function not covered" >fu</span>nction (event) {</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >      if (event.target.name === 'boardButton'){</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        self.scene.start('Title')</span>
+<span class="cstat-no" title="statement not covered" >      if (event.target.name === 'boardButton') {</span>
+<span class="cstat-no" title="statement not covered" >        self.scene.start('Title');</span>
       }
-    })
-<span class="cstat-no" title="statement not covered" >    Board.create()</span>
+    });
+<span class="cstat-no" title="statement not covered" >    Board.create();</span>
   }
 }</pre></td></tr></table></pre>
 
@@ -163,7 +169,7 @@ export default class LeaderBoard extends Phaser.Scene {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Dec 21 2020 11:05:21 GMT-0600 (Central Standard Time)
+                at Thu Dec 24 2020 05:28:58 GMT-0600 (Central Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
