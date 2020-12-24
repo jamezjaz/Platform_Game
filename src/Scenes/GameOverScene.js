@@ -10,10 +10,6 @@ export default class GameOverScene extends Phaser.Scene {
     super('GameOverScene');
   }
 
-  // preload () {
-
-  // }
-
   create() {
     // Play Again
     this.playAgameButton = new Button(this, config.width / 2, config.height / 2 - 150, 'blueButton1', 'blueButton2', 'Play Again', 'Input');

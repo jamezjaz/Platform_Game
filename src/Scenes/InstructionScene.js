@@ -10,10 +10,6 @@ export default class InstructionScene extends Phaser.Scene {
     super('Instruction');
   }
 
-  // preload () {
-
-  // }
-
   create() {
     // Play
     this.playAgameButton = new Button(this, config.width / 2, config.height / 2 + 50, 'blueButton1', 'blueButton2', 'Play', 'Input');

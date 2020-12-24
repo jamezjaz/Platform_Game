@@ -136,6 +136,5 @@ function hitBomb(player, bomb) {
   gameOver = true;
   gameOverText.visible = true;
   score = 0;
-  // this.scene.start('Title');
   this.scene.start('GameOverScene');
 }

@@ -11,8 +11,6 @@ class InputScene extends Phaser.Scene {
   }
 
   create() {
-  // this.scene.remove('Title')
-
     const self = this;
     const text = this.add.text(config.width / 3.3, 10, 'Please, enter your name', { color: 'white', fontFamily: 'Arial', fontSize: '32px ' });
     const element = this.add.dom(400, 600).createFromCache('nameform');
@@ -22,10 +20,12 @@ class InputScene extends Phaser.Scene {
     element.on('click', function (event) {
       if (event.target.name === 'saveNameBtn') {
         const inputName = this.getChildByName('name');
+
         // Have they entered anything?
         if (inputName.value !== '') {
           // Turn off the click events
           this.removeListener('click');
+
           // Tween the login form out
           this.scene.tweens.add({
             targets: element.rotate3d,
@@ -45,6 +45,7 @@ class InputScene extends Phaser.Scene {
               element.setVisible(false);
             },
           });
+
           // Populate the text with whatever they typed in as the name!
           scoreData.nameSetter(inputName.value);
           self.scene.start('Game');
